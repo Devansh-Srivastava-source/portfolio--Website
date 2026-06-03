@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Sniglet:wght@400;800&display=swap');
+
+:root{
+    --head-font: "Limelight", sans-serif;
+    --prime-color: #ffffff;
+    --text-color: rgba(0, 0, 0, 0.8);
+}
+
+body{
+    font-family: "Sniglet", system-ui;
+    background-color: var(--prime-color)
+}
+h1 {
+    font-family: var(--head-font);
+    font-size: 50px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar section  */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    font-family: var(--head-font);
+    /* color: red; */
+    
+}
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+.list-item{
+    list-style-type: none;
+    font-size: 18px;
+}
+.nav-link{
+    color: var(--prime-color);
+    text-decoration: none;
+    transition: color 0.4s;
+}
+.nav-link:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+#first-icon {
+    font-size: 22px;
+    color: var(--prime-color);
+}
+#first-icon span {
+    color: orangered;
+}
+
+
+/* Profile section */
+.pro-pic {
+    width: 450px;
+    /* border: solid 3px rgba(0, 0, 0, 0.8); */
+    border-radius: 50%;
+    box-shadow: 50px 50px 10px orangered;
+}
+.profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 150px;
+    gap: 100px;
+    color: var(--text-color);
+}
+.info{
+    text-align: center;
+    width: 90%;
+}
+.texts {
+    align-items: center;
+    font-size: 25px;
+    /* text-align: center; */
+}
+.texts span{
+    color: orangered;
+}
+.texts h1{
+    font-size: 60px;
+}
+.texts p{
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 20px;
+}
+.cv-but{
+    padding: 10px 30px;
+    margin: 0 30px;
+    background-color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transform: box-shadow 0.4s;
+    font-family: var(--head-font);
+    transition: color 0.2s, background-color 0.2s;
+}
+.cv-but:hover {
+    font-family: var(--head-font);
+    background-color: var(--text-color);
+    color: #ffffff;
+}
+.handles a{
+    color: var(--text-color);
+    font-size: 40px;
+    transition: color 0.2s;
+}
+.handles a:hover{
+    color: orangered;
+}
+/* About section  */
+.heading {
+    margin-bottom: 50px;
+}
+.about-img{
+    width: 250px;
+}
+.about{
+    color: var(--text-color);
+    padding: 100px 150px;
+}
+.about-sec{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Projects section  */
+.projects{
+    color: var(--text-color);
+    padding: 100px 150px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.proj-img {
+    width: 400px;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+.proj-img:hover{
+    transform: scale(1.03);
+}
+
+/* resume section  */
+.resume{
+    padding: 150px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* contact section  */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact{
+    background-color: var(--text-color);
+    color: #ffffff;
+    padding: 20px 150px;
+    /* height: 400px; */
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+.social a{
+    color: #ffffff;
+    font-size: 50px;
+    transition: color 0.2s;
+}
+.social a:hover{
+    color: orangered;
+}
