@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Sniglet:wght@400;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap'); /*Changed*/
 :root{
     --head-font: "Limelight", sans-serif;
     --prime-color: #ffffff;
@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: "Sniglet", system-ui;
+    font-family: "Forum", serif; /*Changed*/
     background-color: var(--prime-color)
 }
 h1 {
@@ -31,6 +31,7 @@ html{
     align-items: center;
     height: 8vh;
     font-family: var(--head-font);
+    
     /* color: red; */
     
 }
@@ -72,7 +73,6 @@ html{
 /* Profile section */
 .pro-pic {
     width: 450px;
-    /* border: solid 3px rgba(0, 0, 0, 0.8); */
     border-radius: 50%;
     box-shadow: 50px 50px 10px orangered;
 }
@@ -86,7 +86,7 @@ html{
 }
 .info{
     text-align: center;
-    width: 90%;
+    /* width: 90%; */
 }
 .texts {
     align-items: center;
@@ -103,10 +103,11 @@ html{
     font-size: 20px;
     text-align: left;
     padding: 10px 20px;
+    margin-bottom: 30px; /*Changed*/
 }
 .cv-but{
     padding: 10px 30px;
-    margin: 0 30px;
+    margin-bottom: 30px; /*Changed*/
     background-color: #ffffff;
     font-size: 20px;
     cursor: pointer;
@@ -128,6 +129,7 @@ html{
 .handles a:hover{
     color: orangered;
 }
+
 /* About section  */
 .heading {
     margin-bottom: 50px;
@@ -140,11 +142,12 @@ html{
     padding: 100px 150px;
 }
 .about-sec{
-    font-size: 20px;
+    font-size: 22px; /*Changed*/
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 50px;
+    text-align: justify; /*Changed*/
 }
 
 /* Projects section  */
@@ -154,7 +157,11 @@ html{
     height: 700px;
     background-color: rgba(0, 0, 0, 0.15);
 }
-
+.cards { /*Changed*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .proj-img {
     width: 400px;
     border-radius: 6px;
@@ -196,4 +203,67 @@ html{
 }
 .social a:hover{
     color: orangered;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:600px){
+    .navbar{
+        flex-direction: column;
+    }
+    #first-icon {
+        font-size: 18px;
+    }
+    .nav-list {
+        gap: 1.5rem;
+    }
+    .nav-link{
+        font-size: 15px;
+    }
+    .profile {
+        padding: 100px 30px 50px;
+        /* padding: 50px 30px; */
+        /* width: 100vw; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .pro-pic {
+        width: 300px;
+    }
+    .about {
+        padding: 50px 30px;
+        flex-direction: column;
+        /* gap: 10px; */
+    }
+    .about-sec {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .about-sec2 {
+        flex-direction: column-reverse;
+    }
+    .projects {
+        padding: 50px 30px;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .proj-img {
+        width: 300px;
+    }
+    .resume {
+        padding: 50px 30px;
+    }
+    .contact {
+        padding: 50px 30px;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+    h1 {
+        font-size: 30px;
+    }
 }
