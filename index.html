@@ -34,10 +34,10 @@
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
-      </div>
     </div>
     </div>
-    
+    </div>
+           
     <div id="profile" class="profile">
       <div class="picture">
         <img
@@ -55,8 +55,8 @@
             provider. See my portfolio, which includes my projects.
           </p>
         </div>
+        <button class="cv-but">Download CV</button>
         <div class="handles">
-          <button class="cv-but">Download CV</button>
           <a href="https://www.linkedin.com/in/devansh-srivastava-703332382?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="home-link">
             <i class="ri-linkedin-box-fill"></i>
           </a>
@@ -97,12 +97,22 @@
 
     <div id="projects" class="projects">
         <h1 class="heading">Projects</h1>
-      <div class="content">
+      
+        <div class="cards"> <!-- changed -->
+          <div class="content">
         <a class="proj-item" href="https://devansh-srivastava-source.github.io/coffeewebsitebyme/" target="_blank">
           <img class="proj-img" src="assets/images/proj1.png" alt="Project-img">
         </a>
         <h3>A coffee advertising website</h3>
       </div>
+      <div class="content"> <!-- changed -->
+        <a class="proj-item" href="#" target="_blank">
+          <img class="proj-img" src="assets/images/proj2.png" alt="Project-img">
+        </a>
+        <h3>A To-Do list website</h3>
+      </div>
+        </div>
+      
       <br>
     </div>
     <div id="resume" class="resume">
@@ -141,6 +151,7 @@
         
     </div>
   </body>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
   <script src="script.js"></script>
 </html>
